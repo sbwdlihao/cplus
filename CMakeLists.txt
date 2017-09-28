@@ -3,9 +3,13 @@ project(cplus)
 
 set(CMAKE_CXX_STANDARD 11)
 
-message("INCLUDE_DIRECTORIES = ${INCLUDE_DIRECTORIES}")
-set(INCLUDE_DIRECTORIES include)
+set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMake)
+find_package(Glog REQUIRED)
+include_directories(${LIBGLOG_INCLUDE_DIR})
+set(glog ${LIBGLOG_LIBRARY})
+
 add_subdirectory(sub_module0)
 
 set(SOURCE_FILES main.cpp)
 add_executable(cplus ${SOURCE_FILES})
+target_link_libraries(cplus ${glog})
