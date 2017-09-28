@@ -9,6 +9,7 @@ include_directories(${LIBGLOG_INCLUDE_DIR})
 set(glog ${LIBGLOG_LIBRARY})
 
 add_subdirectory(sub_module0)
+add_subdirectory(gtest)
 
 set(SOURCE_FILES main.cpp)
 add_executable(cplus ${SOURCE_FILES})
