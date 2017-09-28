@@ -1,0 +1,3 @@
+project(sub0)
+
+message("SUB INCLUDE_DIRECTORIES = ${INCLUDE_DIRECTORIES}")

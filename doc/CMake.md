@@ -1,0 +1,2 @@
+#CMake
+子目录中CMakeLists文件继承父目录的变量设置
