@@ -9,7 +9,7 @@ include_directories(${LIBGLOG_INCLUDE_DIR})
 set(glog ${LIBGLOG_LIBRARY})
 
 add_subdirectory(sub_module0)
-#add_subdirectory(gtest)
+add_subdirectory(gtest)
 add_subdirectory(openssl)
 
 set(SOURCE_FILES main.cpp)
