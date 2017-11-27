@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(sub0)
+project(openssl)
 
 find_package(OpenSSL REQUIRED)
 include_directories(${OPENSSL_INCLUDE_DIR})

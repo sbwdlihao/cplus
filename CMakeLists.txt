@@ -11,6 +11,7 @@ set(glog ${LIBGLOG_LIBRARY})
 add_subdirectory(sub_module0)
 add_subdirectory(gtest)
 add_subdirectory(openssl)
+add_subdirectory(stl)
 
 set(SOURCE_FILES main.cpp)
 add_executable(cplus ${SOURCE_FILES})
