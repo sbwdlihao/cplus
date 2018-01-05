@@ -9,5 +9,5 @@ set(CMAKE_CXX_STANDARD 11)
 #include_directories(/Users/bencong/CLionProjects/cplus/gtest/local/lib/googletest-master/googletest/include)
 #include_directories(/Users/bencong/CLionProjects/cplus/gtest/local/lib/googletest-master/googlemock/include)
 
-add_executable(stl stl.cpp array_test.cpp map_test.cpp protocol.h)
+add_executable(stl stl.cpp array_test.cpp map_test.cpp protocol.h file_test.cpp string_test.cpp)
 target_link_libraries(stl gtest_main gmock_main)
